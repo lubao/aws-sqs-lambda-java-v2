@@ -34,7 +34,7 @@ public class Hello implements RequestHandler<Request, Response> {
     public Response handleRequest(Request request, Context context) {
         System.out.println("Hello");
         SendMessageRequest send_msg_request = SendMessageRequest.builder()
-                .queueUrl("https://sqs.us-east-2.amazonaws.com/697732210755/test")
+                .queueUrl("https://sqs.us-east-2.amazonaws.com/******/test")
                 .messageBody("hello world for Java SDK2")
                 .delaySeconds(5)
                 .build();
